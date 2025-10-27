@@ -109,7 +109,7 @@ For more complex host banners, leave `HOST_CONTENT` empty and use a volume mount
 
 #### MOTD_CONTENT
 Works in a similar fashion to `MOTD_CONTENT`, but is only visible when viewing the MOTD.  This can be shown 
-automatically or when the user presses `h`. Mount for complex motd files is `/motd/mymotd.txt`
+automatically or when the user presses `h`. Mount for complex motd files is `/motd/motd.txt`
 
 #### REGION
 
