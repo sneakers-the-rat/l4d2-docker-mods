@@ -19,6 +19,15 @@ RUN ./as-user.sh
 
 VOLUME ["/addons", "/cfg"]
 
+COPY --chmod=0755 scripts/*.sh /scripts/
+
+ADD install-mod-managers.sh .
+RUN ./install-mod-managers.sh
+
+ADD install-base-mods.sh .
+RUN ./install-base-mods.sh
+
+
 ENV DEFAULT_MAP=$DEFAULT_MAP \
     DEFAULT_MODE="coop" \
     PORT=0 \

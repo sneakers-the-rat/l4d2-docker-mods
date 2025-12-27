@@ -1,11 +1,41 @@
-# Left 4 Dead / Left 4 Dead 2 Dedicated Server Docker Image
+# Left 4 dead 2 dedicated server but with some mods
+
+this builds on the left4devops image to customize it for me playing with some friends.
+not intended for general use.
+
+## Config
+
+use the docker-compose file which pulls config variables from the `.env` file. 
+See `.env.sample` for available options.
+
+All the env vars in the original image as well as ones added by this image can be set by the .env file.
+
+## Additions
+
+- `scripts/` directory are maintenance scripts to be used after image creation
+
+### Maps
+
+- [Freezing Point](https://www.gamemaps.com/details/27158)
+
+## References
+
+- https://steamcommunity.com/sharedfiles/filedetails/?id=276173458
+- https://github.com/modcommunity/how-to-install-and-update-sourcemod-and-metamod/blob/main/README.md
+
+# Original readme 
+
+from https://github.com/Left4DevOps/l4d2-docker
+
+## Left 4 Dead / Left 4 Dead 2 Dedicated Server Docker Image
+
 
 > "Oh, MAN! This is just like Counter-Strike!"
 
 This repository can be used to build docker images for both Left 4 Dead and Left 4 Dead 2. You can use this repository
 to build these images yourself, or pull them from our registry on [Docker Hub](https://hub.docker.com/u/left4devops).
 
-## Getting Started
+### Getting Started
 
 Running a vanilla server can as simple as running:
 
@@ -21,7 +51,7 @@ left4devops/l4d2
 > attempting to force access to RCON. To use host networking on windows or macOS, **enable host networking** from 
 > [experimental features](https://docs.docker.com/network/network-tutorial-host/#prerequisites) in Docker version 4.29.
 
-### Bridge Networking Mode
+#### Bridge Networking Mode
 Although the game server won't be able to correctly identify player's IP correctly, you can use Docker's default bridge
 networking mode instead. Ensure your game port is published using both the TCP and UDP protocols. 
 
@@ -32,7 +62,7 @@ docker run --name l4d2-bridged \
 left4devops/l4d2
 ```
 
-### Restart behaviour
+#### Restart behaviour
 
 > "Someone needs to restart that generator!"
 
@@ -45,14 +75,14 @@ docker run --name l4d2-reboot \
 left4devops/l4d2
 ```
 
-### Denial of Service Protection
+#### Denial of Service Protection
 
 > "But you know, as long as I have a Molotov I can make a firewall!"
 
 This section is in draft, see the [discussion here](https://github.com/Left4DevOps/l4d2-docker/issues/6) for more
 detail.
 
-## Joining a game
+### Joining a game
 
 There are a couple of ways you can achieve this:
 
@@ -65,7 +95,7 @@ There are a couple of ways you can achieve this:
 * You can also open the Server Browser from steam under **View** > **Game Servers**.
 * Servers on your LAN will be shown as Steam Group servers automatically
 
-## Custom Addons
+### Custom Addons
 
 If you wanted to play a custom campaign on your server, or include sourcemod, you can mount a directory with any custom
 content into the `/addons/` directory.
@@ -78,12 +108,12 @@ docker run --name l4d2-server-addons \
 left4devops/l4d2
 ```
 
-## Configuration
+### Configuration
 
-### Environment Variables
+#### Environment Variables
 You can pass environment variables to your Docker Container to configure a number of common settings.
 
-#### HOSTNAME
+##### HOSTNAME
 
 This is the name of you server, as shown in the Server Browser and Steam Group Servers. Defaults to **Left4DevOps**.
 
@@ -95,11 +125,11 @@ docker run --name l4d2-hostname \
 left4devops/l4d2
 ```
 
-#### MOTD
+##### MOTD
 Automatically show the message of the day when players connect. Enable/disabled using `1`/`0`. Off (`0`) by default. If
 you run a lot of gameplay mods on your server, it can gbe helpful to outline them here 
 
-#### HOST_CONTENT
+##### HOST_CONTENT
 This is the slim banner shown at the top of the MOTD. In L4D1, it is also shown when players hold the `TAB` key.
 
 Can display plain text or a http URL. Neither game understands https (although L4D2 can redirect to a https url).
@@ -107,11 +137,11 @@ Can display plain text or a http URL. Neither game understands https (although L
 By default, will show the hostname of your server. For simple banners, `HOST_CONTENT` using the environment variable.
 For more complex host banners, leave `HOST_CONTENT` empty and use a volume mount `/motd/host.txt`.
 
-#### MOTD_CONTENT
+##### MOTD_CONTENT
 Works in a similar fashion to `MOTD_CONTENT`, but is only visible when viewing the MOTD.  This can be shown 
 automatically or when the user presses `h`. Mount for complex motd files is `/motd/motd.txt`
 
-#### REGION
+##### REGION
 
 > "I need every one of you inside, now!"
 
@@ -138,7 +168,7 @@ docker run --name l4d2-region \
 left4devops/l4d2
 ```
 
-#### STEAM_GROUP
+##### STEAM_GROUP
 
 Make your server easier to join, by attaching it to a Steam Group. Steam Group Servers are shown in the bottom right
 corner of the Game menu and can be easily picked as a hosting option in Left 4 Dead 2. In game, players can press `h` to
@@ -151,7 +181,7 @@ docker run --name l4d2-group \
 left4devops/l4d2
 ```
 
-##### STEAM_GROUP_EXCLUSIVE
+###### STEAM_GROUP_EXCLUSIVE
 
 Normally, your server will be available for anyone using the **Best Available Dedicated** setting in their lobby. You
 can prevent this by setting `STEAM_GROUP_EXCLUSIVE` to true. Any member of your group will be able to start a game as
@@ -167,7 +197,7 @@ left4devops/l4d2
 > [!NOTE]
 > Non members can still pick your server using `mm_dedicated_force_servers`
 
-#### PORT
+##### PORT
 
 The game should find the next free port after 27015 to host the game on.  If using bridge networking, 27015 will usually
 be picked automatically, as no other services should be running in the container. You may prefer to hardcode the game
@@ -207,7 +237,7 @@ left4devops/l4d2
 > When publishing your ports with bridge networking, ensure the same port is used for both client and host. Otherwise
 > matchmaking will advertise the wrong port and new players will not be able to connect
 
-#### DEFAULT_MAP
+##### DEFAULT_MAP
 
 Can be used to set the map when the server is first loaded. Defaults to the newest map for each game. The map names are
 different in each game. You can get a full list of maps names by typing `maps` in your Developer Console. To start your
@@ -219,7 +249,7 @@ docker run --name l4d2-map \
 left4devops/l4d2
 ```
 
-#### DEFAULT_MODE
+##### DEFAULT_MODE
 
 Sets the mode used by your server when it is first loaded. Defaults to coop, but can be changed from a lobby.
 
@@ -229,7 +259,7 @@ docker run --name l4d2-mode \
 left4devops/l4d2
 ```
 
-#### GAME_TYPES
+##### GAME_TYPES
 
 Can be used to limit which game modes can be played on your server. Leave unspecified to allow all game modes. Values
 include `coop,realism,survival,versus,scavenge,dash,holdout,shootzones`
@@ -240,7 +270,7 @@ docker run --name l4d2-modes \
 left4devops/l4d2
 ```
 
-#### FORK
+##### FORK
 
 Run multiple games from the same container, with ports being automatically allocated by default. The `PORT` variable is 
 ignored. You can customise the behaviour of the different instances by mounting multiple **server##.cfg** files.
@@ -254,7 +284,7 @@ docker run --name l4d2-forked \
 left4devops/l4d2
 ```
 
-#### LAN
+##### LAN
 
 Runs the server without needing to talk to Steam, but connecting players need a local IP address.
 
@@ -265,7 +295,7 @@ docker run --name l4d2-lan \
 left4devops/l4d2
 ```
 
-#### RCON_PASSWORD
+##### RCON_PASSWORD
 
 > Son, we're immune, we're tired, and there's infected in the damn woods. Now cut the shit and let us in!
 
@@ -291,7 +321,7 @@ rcon
 > ban an IP after a few failed attempts. This can have the unintended side effect of banning everyone if using bridge
 > networking.
 
-#### NET_CON_PORT
+##### NET_CON_PORT
 
 Similar to RCON, the Network Console allows you to administrator your server, but using a `telnet` client. If not using
 a password, I would strongly recommend using a firewall to block public access to the port. To start listening on port
@@ -310,7 +340,7 @@ You could then connect using your telnet client:
 telnet localhost 17015
 ```
 
-##### NET_CON_PASSWORD
+###### NET_CON_PASSWORD
 To set a net con password:
 
 ```shell
@@ -334,7 +364,7 @@ A telnet client is included in the image so you can connect using `docker exec`:
 docker exec -it l4d2 telnet localhost 17015
 ```
 
-#### EXTRA_ARGS
+##### EXTRA_ARGS
 
 Got a small number of other settings you want to add? To spawn larger mobs more frequently:
 
@@ -344,7 +374,7 @@ docker run --name l4d2-args \
 left4devops/l4d2
 ```
 
-### server.cfg
+#### server.cfg
 
 `srcds_run` will look for a `server.cfg` file. If you have lots of config, store them in a file and mount it to
 `/cfg/server.cfg`.
@@ -355,7 +385,7 @@ docker run --name l4d2-server-cfg \
 left4devops/l4d2
 ```
 
-### Command line replacement
+#### Command line replacement
 
 You can completely replace the guided environment variable configuration by providing arguments when starting the
 container

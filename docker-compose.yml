@@ -1,4 +1,12 @@
 services:
   l4d2:
-    image: left4devops/l4d2
+    image: sneakerstherat/l4d2-mods
     network_mode: host
+    env_file: ".env"
+    build:
+      dockerfile: ./Dockerfile
+    volumes:
+      - ${PWD}/server.cfg:/cfg/server.cfg
+    ports:
+      - "27015:27015/tcp"
+      - "27015:27015/udp"
