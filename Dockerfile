@@ -1,11 +1,18 @@
 FROM left4devops/l4d2 AS base
 
+USER root
+ADD install-deps.sh .
+RUN ./install-deps.sh
+
 WORKDIR /home/louis
 USER louis
 
 ARG GAME_ID=222860 \
     INSTALL_DIR="l4d2" \
     DEFAULT_MAP="c14m1_junkyard"
+
+
+EXPOSE 27015/tcp 27015/udp
 
 VOLUME ["/addons", "/cfg"]
 

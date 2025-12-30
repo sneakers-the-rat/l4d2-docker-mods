@@ -9,7 +9,6 @@ fi
 # install requested mod packs
 /scripts/install-modpacks.sh
 
-
 ./steamcmd.sh +runscript update.txt
 
 cd "${INSTALL_DIR}" || exit 50

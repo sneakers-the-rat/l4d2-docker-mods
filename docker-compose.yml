@@ -1,7 +1,7 @@
 services:
   l4d2:
     image: sneakerstherat/l4d2-mods
-    network_mode: host
+    # network_mode: host
     env_file: ".env"
     build:
       dockerfile: ./Dockerfile

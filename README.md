@@ -10,18 +10,37 @@ See `.env.sample` for available options.
 
 All the env vars in the original image as well as ones added by this image can be set by the .env file.
 
+- `MAP_DAY_BREAK=true` - enable day break map
+
 ## Additions
 
 - `scripts/` directory are maintenance scripts to be used after image creation
 
+### Mods
+
+- left 4 bots 2 - https://www.gamemaps.com/details/31078
+
 ### Maps
 
 - [Freezing Point](https://www.gamemaps.com/details/27158)
+- big wat - https://www.gamemaps.com/details/9473
+- daybreak - https://www.gamemaps.com/details/9221
+
+
+TODO:
+- buried deep
+- suicide blitz 2 - https://www.gamemaps.com/details/13867
+- dark wood
+- diescraper redux
+- energy crisis
+- redemption 2 - https://www.gamemaps.com/details/2849
+- warcelona - https://www.gamemaps.com/details/3131
 
 ## References
 
 - https://steamcommunity.com/sharedfiles/filedetails/?id=276173458
 - https://github.com/modcommunity/how-to-install-and-update-sourcemod-and-metamod/blob/main/README.md
+- list of custom campaign names: https://steamcommunity.com/sharedfiles/filedetails/?id=2822676401
 
 # Original readme 
 
