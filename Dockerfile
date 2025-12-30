@@ -1,21 +1,11 @@
-FROM rockylinux/rockylinux:9-minimal AS base
-
-ADD as-root.sh .
-RUN ./as-root.sh
+FROM left4devops/l4d2 AS base
 
 WORKDIR /home/louis
 USER louis
 
-FROM base AS game
-
 ARG GAME_ID=222860 \
     INSTALL_DIR="l4d2" \
     DEFAULT_MAP="c14m1_junkyard"
-
-EXPOSE 27015/tcp 27015/udp
-
-ADD as-user.sh .
-RUN ./as-user.sh
 
 VOLUME ["/addons", "/cfg"]
 
@@ -40,5 +30,5 @@ ENV DEFAULT_MAP=$DEFAULT_MAP \
     MOTD_CONTENT="Play nice, kill zombies" \
     MOTD=0
 
-ADD entrypoint.sh .
-ENTRYPOINT ["./entrypoint.sh"]
+ADD entrypoint_mods.sh .
+ENTRYPOINT ["./entrypoint_mods.sh"]
