@@ -35,12 +35,23 @@ TODO:
 - energy crisis
 - redemption 2 - https://www.gamemaps.com/details/2849
 - warcelona - https://www.gamemaps.com/details/3131
+- [deathcraft 2](https://www.gamemaps.com/details/2473)
+- [yama](https://www.gamemaps.com/details/22601)
+- [left 4 mario](https://www.gamemaps.com/details/2524)
+- [dead before dawn](https://www.gamemaps.com/details/2268)
+- [2019](https://www.gamemaps.com/details/2599)
+- [journey to splash mountain](https://www.gamemaps.com/details/6084)
+- [goldeneye 4 dead](https://www.gamemaps.com/details/3198)
+- wat da ghell is [lets build](https://www.gamemaps.com/details/2822)
+
+
 
 ## References
 
 - https://steamcommunity.com/sharedfiles/filedetails/?id=276173458
 - https://github.com/modcommunity/how-to-install-and-update-sourcemod-and-metamod/blob/main/README.md
 - list of custom campaign names: https://steamcommunity.com/sharedfiles/filedetails/?id=2822676401
+- detailed config https://www.dropbox.com/scl/fi/nl9woharb692jes/Detailed-Server-Config.txt?rlkey=a6d0h7ej3h7ds6dcu2jhauaz1&e=1&dl=0
 
 # Original readme 
 
