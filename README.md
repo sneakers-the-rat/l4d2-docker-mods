@@ -22,28 +22,43 @@ All the env vars in the original image as well as ones added by this image can b
 
 ### Maps
 
+
+
+Played
 - [Freezing Point](https://www.gamemaps.com/details/27158)
 - big wat - https://www.gamemaps.com/details/9473
 - daybreak - https://www.gamemaps.com/details/9221
+- [yama](https://www.gamemaps.com/details/22601)
+- [journey to splash mountain](https://www.gamemaps.com/details/6084)
+- redemption 2 - https://www.gamemaps.com/details/2849
+- warcelona - https://www.gamemaps.com/details/3131
+- diescraper redux
+- suicide blitz 2 - https://www.gamemaps.com/details/13867
 
 
 TODO:
 - buried deep
-- suicide blitz 2 - https://www.gamemaps.com/details/13867
 - dark wood
-- diescraper redux
 - energy crisis
-- redemption 2 - https://www.gamemaps.com/details/2849
-- warcelona - https://www.gamemaps.com/details/3131
 - [deathcraft 2](https://www.gamemaps.com/details/2473)
-- [yama](https://www.gamemaps.com/details/22601)
 - [left 4 mario](https://www.gamemaps.com/details/2524)
 - [dead before dawn](https://www.gamemaps.com/details/2268)
 - [2019](https://www.gamemaps.com/details/2599)
-- [journey to splash mountain](https://www.gamemaps.com/details/6084)
 - [goldeneye 4 dead](https://www.gamemaps.com/details/3198)
 - wat da ghell is [lets build](https://www.gamemaps.com/details/2822)
-
+- [tour of terror](https://www.gamemaps.com/details/2721)
+- [the bloody moors](https://www.gamemaps.com/details/6772)
+- [salt hell park](https://www.gamemaps.com/details/3418)
+- [One 4 Nine](https://www.gamemaps.com/details/2682)
+- [Questionable Ethics](https://www.gamemaps.com/details/2795)
+- [Blood Tracks](https://www.gamemaps.com/details/2750)
+- [Blight Path](https://www.gamemaps.com/details/2924)
+- [Wan Li](https://www.gamemaps.com/details/2906)
+- [Drop dead gorges](https://www.gamemaps.com/details/2135)
+- [Highway to hell](https://www.gamemaps.com/details/2714)
+- [Death Aboard 2](https://www.gamemaps.com/details/2486)
+- [City 17](https://www.gamemaps.com/details/2506)
+- [2019](https://www.gamemaps.com/details/2599) - [HD Texture Pack](https://www.gamemaps.com/details/5585)
 
 
 ## References
