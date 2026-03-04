@@ -45,6 +45,14 @@ TODO:
 - [Death Aboard 2](https://www.gamemaps.com/details/2486)
 - [City 17](https://www.gamemaps.com/details/2506)
 - https://steamcommunity.com/workshop/filedetails/?id=3140149743
+- [glubtastic maps???](https://www.gamemaps.com/details/22803)
+- [toyz](https://www.gamemaps.com/details/19255)
+- [outrun city](https://www.gamemaps.com/details/23049)
+- [minecraft river survivel](https://www.gamemaps.com/details/26911)
+- [the gravitation](https://www.gamemaps.com/details/34457) 
+- [Taiyuan City](https://www.gamemaps.com/details/34944)
+- [SAW - The Bathroom](https://www.gamemaps.com/details/35271)
+
 
 Played
 - [Freezing Point](https://www.gamemaps.com/details/27158)
@@ -57,6 +65,8 @@ Played
 - diescraper redux
 - suicide blitz 2 - https://www.gamemaps.com/details/13867
 - [2019](https://www.gamemaps.com/details/2599) - 2/5
+- urban flight - 5/5 - extremely good, revisit
+- Prague - 3/5 - repetitive, zombie spam, but also some nice interiors
 
 
 ### Faves
