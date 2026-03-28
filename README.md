@@ -48,7 +48,6 @@ TODO:
 - [glubtastic maps???](https://www.gamemaps.com/details/22803)
 - [toyz](https://www.gamemaps.com/details/19255)
 - [outrun city](https://www.gamemaps.com/details/23049)
-- [minecraft river survivel](https://www.gamemaps.com/details/26911)
 - [the gravitation](https://www.gamemaps.com/details/34457) 
 - [Taiyuan City](https://www.gamemaps.com/details/34944)
 - [SAW - The Bathroom](https://www.gamemaps.com/details/35271)
@@ -68,6 +67,10 @@ Played
 - urban flight - 5/5 - extremely good, revisit
 - Prague - 3/5 - repetitive, zombie spam, but also some nice interiors
 
+Survival
+- [minecraft river survival](https://www.gamemaps.com/details/26911) - 5/5
+
+
 
 ### Faves
 
@@ -77,8 +80,9 @@ Played
 
 - https://steamcommunity.com/sharedfiles/filedetails/?id=276173458
 - https://github.com/modcommunity/how-to-install-and-update-sourcemod-and-metamod/blob/main/README.md
-- list of custom campaign names: https://steamcommunity.com/sharedfiles/filedetails/?id=2822676401
-- detailed config https://www.dropbox.com/scl/fi/nl9woharb692jes/Detailed-Server-Config.txt?rlkey=a6d0h7ej3h7ds6dcu2jhauaz1&e=1&dl=0
+- [list of custom campaign names](https://steamcommunity.com/sharedfiles/filedetails/?id=2822676401)
+- [detailed config](https://www.dropbox.com/scl/fi/nl9woharb692jes/Detailed-Server-Config.txt?rlkey=a6d0h7ej3h7ds6dcu2jhauaz1&e=1&dl=0)
+- [better map name list](https://gist.github.com/zombie110year/18476a847f87b88b399756e75ca29d56)
 
 # Original readme 
 
