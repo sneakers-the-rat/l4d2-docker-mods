@@ -3,6 +3,8 @@
 this builds on the left4devops image to customize it for me playing with some friends.
 not intended for general use.
 
+we sorta abandoned the idea of bundling mods in with the image because it was a bad idea and thsi is just basically a repo with a list of maps and stuff lol
+
 ## Config
 
 use the docker-compose file which pulls config variables from the `.env` file. 
@@ -34,7 +36,7 @@ TODO:
 - wat da ghell is [lets build](https://www.gamemaps.com/details/2822)
 - [tour of terror](https://www.gamemaps.com/details/2721)
 - [the bloody moors](https://www.gamemaps.com/details/6772)
-- [salt hell park](https://www.gamemaps.com/details/3418)
+
 - [One 4 Nine](https://www.gamemaps.com/details/2682)
 - [Questionable Ethics](https://www.gamemaps.com/details/2795)
 - [Blood Tracks](https://www.gamemaps.com/details/2750)
@@ -48,7 +50,6 @@ TODO:
 - [glubtastic maps???](https://www.gamemaps.com/details/22803)
 - [toyz](https://www.gamemaps.com/details/19255)
 - [outrun city](https://www.gamemaps.com/details/23049)
-- [the gravitation](https://www.gamemaps.com/details/34457) 
 - [Taiyuan City](https://www.gamemaps.com/details/34944)
 - [SAW - The Bathroom](https://www.gamemaps.com/details/35271)
 
@@ -66,6 +67,8 @@ Played
 - [2019](https://www.gamemaps.com/details/2599) - 2/5
 - urban flight - 5/5 - extremely good, revisit
 - Prague - 3/5 - repetitive, zombie spam, but also some nice interiors
+- [the gravitation](https://www.gamemaps.com/details/34457) - 4/5, good map but too fuckin long. if it was 10 maps it would have been better. finale is weak
+- [salt hell park](https://www.gamemaps.com/details/3418) - 5/5 - good easter eggs, just consistently interesting map. good on expert
 
 Survival
 - [minecraft river survival](https://www.gamemaps.com/details/26911) - 5/5
